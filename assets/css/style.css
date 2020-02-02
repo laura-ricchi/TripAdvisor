@@ -1,0 +1,520 @@
+/* Common */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #eeeeeb;
+  color: #000a12;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #4a4a4a;
+  background-color: #ffffff;
+}
+
+h1 {
+  font-size: 20px;
+  line-height: 50px;
+  color: #333333;
+  background-color: #ffffff;
+  padding: 0 10px 0 20px;
+  border-radius: 25px;
+  text-align: center;
+}
+h1 i {
+  color: #00a680;
+  vertical-align: middle;
+}
+h1:hover {
+  cursor: pointer;
+}
+h1:hover i {
+  color: #19e6b6;
+}
+h2 {
+  font-size: 20px;
+  line-height: 24px;
+}
+h3 {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+
+.container {
+  width: 1240px;
+  margin: 0 auto;
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+
+/* FLEXBOX */
+.d-flex {
+  display: flex;
+}
+.align-items-center {
+  align-items: center;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.space-between {
+  justify-content: space-between;
+}
+
+/* ICON */
+
+.icon-small {
+  font-size: 14px;
+}
+.icon-medium {
+  font-size: 22px;
+}
+.icon-large {
+  font-size: 33px;
+}
+
+/* BUTTON */
+.button {
+  background-color: #000a12;
+  color: #ffffff;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 36px;
+  padding: 0 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+}
+.button:hover {
+  background-color: #3be0a1;
+}
+
+/* PADDING */
+.pl-20 {
+  padding-left: 20px;
+}
+.p-25 {
+  padding: 25px;
+}
+
+/* ALIGN */
+.text-center {
+  text-align: center;
+}
+
+header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+header img {
+  width: 180px;
+}
+header > div {
+  display: flex;
+  justify-content: space-between;
+}
+header ul {
+  display: flex;
+}
+header ul a {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+header li {
+  padding-left: 20px;
+}
+header span {
+  font-size: 12px;
+  margin-top: 2px;
+}
+header a {
+  color: rgb(0, 10, 18);
+  text-decoration: inherit;
+}
+header a:hover {
+  color: #3be0a1;
+}
+menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  position: relative;
+  background-image: url(/assets/img/rome.jpg);
+  margin-bottom: 100px;
+}
+
+.breadcrumbs {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  font-size: 11px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.breadcrumbs ul {
+  display: flex;
+}
+.breadcrumbs i {
+  font-size: 8px;
+  padding: 0 5px;
+}
+.breadcrumbs a {
+  line-height: 40px;
+  color: inherit;
+  text-decoration: inherit;
+}
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+/* RESET LOCATION */
+.reset-location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 10, 18, 0.6);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.reset-location:hover {
+  background-color: rgb(0, 10, 18, 1);
+  cursor: pointer;
+}
+.reset-location i {
+  font-size: 18px;
+  color: white;
+}
+nav {
+  position: absolute;
+  left: 0;
+  bottom: -75px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+nav ul {
+  display: flex;
+  background-color: white;
+}
+nav li {
+  padding: 24px 46px 10px 46px;
+}
+nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: inherit;
+  text-decoration: inherit;
+}
+nav a {
+  color: inherit;
+}
+nav span {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+}
+nav i {
+  color: #000a12;
+}
+/* MAIN */
+main {
+  display: flex;
+}
+main > div {
+  flex: 1;
+  /* width: 54%; */
+}
+aside {
+  width: 23%;
+}
+aside > div {
+  background-color: white;
+  padding: 25px;
+  margin-bottom: 15px;
+}
+/* UNLOCK */
+aside .unlock img {
+  width: 135px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+aside .unlock li {
+  display: flex;
+  margin-bottom: 15px;
+}
+aside .unlock li:last-child {
+  margin-bottom: 35px;
+}
+.bullet {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  color: #4a4a4a;
+  margin-right: 12px;
+}
+.btn-white {
+  line-height: 36px;
+  border: solid 1px #4a4a4a;
+  width: 100%;
+  padding: 0 12px;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.btn-white:hover {
+  border-color: #767676;
+  cursor: pointer;
+}
+/* SECTION */
+section > div {
+  background-color: white;
+  margin: 0 25px;
+}
+/* GALLERY */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery > div {
+  width: 50%;
+  height: 170px;
+  background-size: cover;
+  background-position: center;
+  border-bottom: 2px solid white;
+  box-sizing: border-box;
+}
+.gallery > div:nth-child(odd) {
+  border-right: 2px solid white;
+}
+.gallery > div:last-child > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+}
+/* EXPLORE */
+aside .explore a {
+  color: inherit;
+  text-decoration: inherit;
+}
+aside .explore a:hover {
+  text-decoration: underline;
+}
+aside .explore ul li:first-child {
+  font-weight: bold;
+}
+aside .explore ul li {
+  line-height: 22px;
+}
+aside .explore ul {
+  margin-bottom: 10px;
+}
+aside .explore img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+/*SUBMENU */
+.submenu {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.submenu a {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  color: inherit;
+  text-decoration: inherit;
+}
+.submenu a:hover {
+  text-decoration: underline;
+}
+.submenu a:last-child {
+  color: #00a680;
+}
+/* SCROLL SECTION */
+.scroll-section {
+  padding: 25px;
+  margin-top: 10px;
+}
+.scroll-section ul::-webkit-scrollbar {
+  display: none;
+}
+.scroll-section ul {
+  display: flex;
+  /* width: 600px; */
+  height: 100%;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+.scroll-section li {
+  width: 33.333333%;
+  box-sizing: border-box;
+  padding-right: 10px;
+  position: relative;
+  flex: none;
+}
+.scroll-section img {
+  border-radius: 2px;
+  width: 100%;
+  height: 133px;
+  object-fit: cover;
+  object-position: center;
+}
+.scroll-section a {
+  cursor: pointer;
+  color: #2c2c2c;
+  background-color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 24px;
+}
+.scroll-section li div {
+  color: #00a680;
+}
+.scroll-section li span {
+  color: #4a4a4a;
+  font-size: 12px;
+  line-height: 16px;
+  position: relative;
+}
+.scroll-section li div:first-child > i {
+  position: absolute;
+  color: white;
+  right: 10px;
+  cursor: pointer;
+}
+.scroll-section li div:first-child > i:hover {
+  color: red;
+  font-size: 40px;
+}
+
+/* MODAL */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.modal > div {
+  width: 300px;
+  height: 400px;
+  background-color: white;
+}
+
+/* VISIBLE */
+.visible-xs {
+  display: none;
+}
+.hidden {
+  display: none;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1240px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .hidden-sm {
+    display: none;
+  }
+  header li {
+    display: flex;
+    align-items: center;
+  }
+  main > div {
+    width: 100%;
+  }
+  aside {
+    display: none;
+  }
+  section > div {
+    margin: 0;
+  }
+  nav > ul {
+    width: 100%;
+  }
+  nav li {
+    flex: 1;
+    padding: 24px 0 10px 0;
+  }
+}
+@media (max-width: 768px) {
+  .hidden-xs {
+    display: none;
+  }
+  .visible-xs {
+    display: block;
+  }
+  .container {
+    padding: 0;
+  }
+  header {
+    height: 50px;
+  }
+  header img {
+    transform: scale(0.7);
+  }
+  menu {
+    height: 140px;
+  }
+  nav {
+    bottom: -185px;
+  }
+  menu > div:nth-child(2) {
+    transform: scale(0.6);
+  }
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  nav li {
+    width: 33.333333%;
+    flex: none;
+    padding: 12px 10px 5px 10px;
+    box-sizing: border-box;
+  }
+  nav span {
+    font-size: 12px;
+  }
+  menu {
+    margin-bottom: 200px;
+  }
+}
+.shrink {
+  transform: scale(0.6);
+}
